@@ -1,0 +1,296 @@
+.home-header-container{
+    width: 100%;
+    height: 60px;
+    background:linear-gradient(135deg, rgba(216, 218, 217, 0.562)0%,rgba(209, 205, 194, 0.375)100%);
+    position: fixed;
+    .home-header-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .left-content{
+            width: 25%;
+            display: flex;
+            align-items: center;
+            
+            .header-logo{
+                margin:auto 50px;
+                background: url('../../assets/images/hacker.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+               display: flex;
+                width: 40px;
+                height: 40px;
+                transition: transform 0.3s ease;
+                
+                cursor: pointer;
+            }
+
+
+            .header-logo:hover{
+                transform: scale(1.1);
+            }
+            .header-logo::before{
+                content: ""; 
+                transition: opacity 0.5s ease;
+            }
+            .menu{
+               i.fa-bars{
+                margin-left: 40px;
+                font-size: 25px;
+                color: gray;
+                cursor: pointer;
+               }
+               i.fa-bars:hover{
+                color: rgb(186, 29, 29);
+               }
+                .menu-bar{
+                    
+                    margin-left: 40px;
+                    top: 60px;
+                    position: absolute;
+                    background: linear-gradient(rgba(227, 239, 233, 0.648),rgb(203, 227, 240));
+                    border-radius: 10px;
+                    display:  none;
+
+                    .child-menu-bar{
+                        
+                        width: 150px;
+                        height: 40px;
+                        margin: auto auto;
+                        display: flex;
+                        a{
+                            width: 80%;
+                            height:80%;
+                            margin: auto 0px;
+                            display: flex;
+                            margin-left: 10%;
+                            align-items: center;
+                            color: rgb(18, 18, 18);
+                            text-decoration: none;
+                            margin-right: 10%;
+                            width: 50%;
+                            transition: width  0.6s ease;
+                        }
+                        a:hover {
+                            color: rgb(186, 29, 29);
+                            border-bottom: 1px solid rgb(186, 29, 29);
+                            width: 100%;
+                        }
+                    }
+                }
+               .menu-bar:hover{
+                display: block;
+               }
+            }
+            
+        }
+        .center-content{
+            
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .child-content{
+                margin: 40px;
+                cursor: pointer;
+                
+            }
+            .child-content:hover{
+               transform: scale(1.1);
+               transition: transform 0.3s;
+                color: rgb(233, 151, 63);
+            }
+        }
+        .right-content{
+            width: 25%;
+            display: flex;
+            .container-right-content{
+                display: flex;
+                align-items: center;
+                margin-left: 20%;
+                width: 55%;
+                .child-content{
+                    margin: 10px;
+                    margin-left: 20px;
+                    cursor: pointer;
+                }
+                
+                i.far{
+                    font-size: 15px;
+                    margin-left: 10px;
+                    
+                }
+                
+                i.fa-question-circle{
+                    margin-left: 15px;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                
+            }
+            .container-right-content .child-content a:hover{
+                color: rgb(57, 214, 241);
+            }
+            .active{
+                
+                span{
+
+                    font-weight: 600;
+                    color: orange ;
+                }
+                
+               }
+            .language-vi{
+                display: flex;
+                align-items: center;
+                width: 7%;
+                margin-left: 3%;
+                color: rgb(177, 177, 173);
+                cursor: pointer;
+                
+            }
+            .language-en{
+                display: flex;
+                align-items: center;
+                color: rgb(183, 183, 179);
+                cursor: pointer;
+                
+            }
+           
+            .language-en:hover{
+                opacity: 1;
+                color: rgb(4, 45, 99);
+            }
+            .language-vi:hover{
+                opacity: 1;
+                color: rgb(4, 45, 99);
+            }
+
+           
+        }
+    }
+}
+.home-header-banner{
+    margin-top: 60px;
+    height:485px;
+    background: url('../../assets/images/br1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    float: left;
+    width: 100%;
+    .content-up{
+        
+        margin-top: 50px !important;
+        margin: 0 400px;
+        height: 40px;
+       
+        .title1{
+            font-size: 22px;
+            text-align: center;
+            color: rgb(13, 9, 63);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .title2{
+            font-size: 26px;
+            text-align: center;
+            color: white;
+            text-shadow: -1px -1px rgb(237, 237, 224) ;
+            margin-bottom: 30px;
+        }
+        .search{
+            border-radius: 25px;
+            height: 40px;
+            background-color: rgba(188, 245, 219, 0.941);
+            width: 450px;
+            align-items: center;
+            display:flex;
+            padding: 10px;
+            justify-content: center;
+            i{
+                margin-left: 10px;
+                margin: 0 5xp;
+                margin-right: 15px;
+            }
+            input{
+                font-size: 14px;
+                font-weight: 300;
+                height: 30px;
+                width: 450px;
+                background: transparent;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+    .content-down{
+        width: 100%;
+        height: 140px;
+        margin: auto;
+        margin-top: 260px;
+        
+        display: flex;
+        background-image: linear-gradient(rgba(246, 249, 248, 0.067),rgb(252, 252, 252)) ;
+        .options{
+            width: 39%;
+            margin: 20px auto;
+            height: 100px;
+            border-radius: 10px !important;
+            .option-child{
+                width:20%;
+                height: 80px;
+                margin: auto ;
+                margin-top: 2vh;
+                float: left;
+                cursor: pointer;
+                .icon-background{
+                    margin: auto;
+                    width: 47px;
+                    height: 43px;
+                    border-radius: 30px;
+                    background-color: rgba(240, 255, 255, 0.863);
+                    .icon-motobike{
+                        background:url('../../assets/images/motorbike.png');
+                    }
+                    .icon-spare-parts{
+                        background:url('../../assets/images//exhaust-pipe.png'); 
+                    }
+                    .icon-tire{
+
+                        background:url('../../assets/images/car.png');
+                    }
+                    .icon-motorcycle-oil{
+                        background:url('../../assets/images/engine-oil.png');
+                    }
+                    .icon-biker-accessories{
+                        background:url('../../assets/images/helmet.png');
+                    }
+                    .icon-child{
+                        
+                        margin: auto ;
+                        width: 40px;
+                        height: 40px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+                .icon-background:hover{
+                   
+                    background-color: rgba(63, 231, 243, 0.886);
+                }
+                .text-child{
+                    font-weight: 550;
+                    text-align: center;
+                    font-size: 12px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
+                
+            }
+        }
+    }
+}

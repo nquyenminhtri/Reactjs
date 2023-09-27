@@ -1,0 +1,30 @@
+export const path = {
+    HOME: '/',
+    HOMEPAGE: '/home',
+    LOGIN: '/login',
+    DETAIL:'/detail',
+    LOG_OUT: '/logout',
+    SYSTEM: '/system',
+    REGISTER:'/register',
+};
+
+export const LANGUAGES = {
+    
+    EN: 'en',
+    VI: 'vi',
+};
+ 
+export const manageActions = {
+    ADD: "ADD",
+    EDIT: "EDIT",
+    DELETE: "DELETE"
+};
+
+export const dateFormat = {
+    SEND_TO_SERVER: 'DD/MM/YYYY'
+};
+
+export const YesNoObj = {
+    YES: 'Y',
+    NO: 'N'
+}
